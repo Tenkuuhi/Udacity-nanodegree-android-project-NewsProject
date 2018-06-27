@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="News Settings">
+
+    <ListPreference
+        android:defaultValue="@string/order_news_default_value"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/order_news_key"
+        android:title="@string/order_news_title" />
+
+    <EditTextPreference
+        android:defaultValue="@string/page_size_default_value"
+        android:inputType="numberSigned"
+        android:key="@string/page_size_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/page_size_title" />
+
+</PreferenceScreen>
